@@ -2,8 +2,9 @@ package com.desarrollos.entde;
 
 public class Garage{
     
+	//El System.out estaba mal escrito
     public void printGarage() 
     {
-        system.out.print("|*]");
+        System.out.print("|*]");
     }
 }

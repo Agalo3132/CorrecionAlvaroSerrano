@@ -26,14 +26,15 @@ public class Car
      * Method that is being always invoked when the program is running
      * @throws InterruptedException 
      */
+  //El main no tenia el static y no estaban bien llamados a los metodos
     public static void main(String[] args) throws InterruptedException{
     	Garage g = new Garage();
     	Car car = new Car(g);
         car.accelerate();
-        slowDown();
-        moveDown();
-        accelerate();
-        car.printGarage();
+        car.slowDown();
+        car.moveDown();
+        car.accelerate();
+        g.printGarage();
 //        turnRight();
 //        turnHeadlightsOn();
 //        turnHeadlightsOff();
@@ -58,8 +59,10 @@ public class Car
      * Slow down the car
      * @throws InterruptedException 
      */
+    //Los strings estan mal escritos
+
     public void slowDown() throws InterruptedException{
-    	string c = new string("     *");
+    	String c = new String("     *");
     	for(int i=0; i<5; i++)
         {
         	System.out.print(c);
@@ -73,9 +76,11 @@ public class Car
      * Move the car downwards
      * @throws InterruptedException 
      */    
+    //Hay errores con como estan escritos los strings y que en el for hay comas en vez de punto coma, y en el String hay dos cierres de parentesis en vez de uno
+
     public void moveDown() throws InterruptedException{
-    	string c = new string("\t\t\t\t  *"));
-    	for(int i=0, i<5, i++)
+    	String c = new String("\t\t\t\t  *");
+    	for(int i=0; i<5; i++)
         {
     		if(i!=4)
     			System.out.println(c);
